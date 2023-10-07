@@ -1,0 +1,14 @@
+{% extends 'base.html' %} 
+
+{% block content %}
+
+<h1 class="text-center display-5">Penggabung PDF</h1>
+<br />
+
+<form action="/penggabungpdf/merge" method="post" enctype="multipart/form-data">
+    <input type="file" name="pdf_files" id="pdf_files" accept=".pdf" multiple>
+    <button type="submit">Merge</button>
+</form>
+
+
+{% endblock %}
