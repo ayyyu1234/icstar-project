@@ -2,13 +2,13 @@
 
 {% block content %}
 
-<h1 class="text-center display-5">Penggabung PDF</h1>
+<h1 class="text-center display-5">Pemisah PDF</h1>
 <br />
 
-<form action="/penggabungpdf/merge" method="post" enctype="multipart/form-data">
+<form action="/pemisahpdf/split" method="post" enctype="multipart/form-data">
     <label for="id_files">Masukkan berkas pdf anda</label>
     <input type="file" name="pdf_files" id="pdf_files" accept=".pdf" multiple>
-    <button type="submit">Merge</button>
+    <button type="submit">Split</button>
 </form>
 
 
